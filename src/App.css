@@ -1,38 +1,82 @@
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 48.9% 4.2%,
+    rgba(39, 10, 226, 1) 0%,
+    rgba(164, 12, 251, 1) 100.2%
+  );
+}
+
 .App {
-  text-align: center;
+  /* background-color: #cfc7e4; */
+  background: #5c258d;
+  background: -webkit-linear-gradient(to right, #4389a2, #5c258d);
+  background: linear-gradient(to right, #4389a2, #5c258d);
+
+  min-height: 500px;
+  width: 400px;
+
+  margin: 40px auto;
+  border-radius: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#to-do-form input {
+  /* background-color: rgb(49, 137, 27); */
+
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0px 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  color: rgb(252, 250, 250);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do-form input::placeholder {
+  color: rgba(219, 219, 233, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#to-do-form input:focus,
+#to-do-form button:focus {
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+#to-do-form button {
+  width: 80px;
+  height: 50px;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%);
+}
+#to-do-form button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+.btn-grad {background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
